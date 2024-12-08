@@ -1,19 +1,23 @@
-import React, { useState } from 'react'
-import BGvideo from './BGVideo.mp4'
-// import Logo from './Logo.png'
-// import Arrow from './icons8-down-arrow-100.png'
+import React from 'react'
 import { Link } from "react-router-dom";
 import { TypeAnimation } from 'react-type-animation';
+import About from './About';
+import Services from './Services';
+import Us from './Us'
+import Testimonials from './Testimonials';
+import MainContact from './MainContact';
+import Works from './Works';
 
 
 const Home = () => {
 
     return (
         <>
-            <div className="hero" id="home">
-                <div className="contain">
-                    <video className='back-video' autoPlay loop muted playsInline>
-                        <source src={BGvideo} type='video/mp4' />
+            <div className="hero" id="home" style={{height:'128vh'}}>
+                <div className="contain" style={{height:'128vh'}}>
+                    <video className='back-video' autoPlay loop muted playsInline preload="metadata">
+                    <source src="/BGVideo.webm" type="video/webm" />
+                    <source src="/BGVideo.mp4" type="video/mp4" />
                     </video>
                     <div className="overlay">
                     </div>
@@ -21,15 +25,14 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="content container" style={{ marginTop: '47px' }}>
-                    {/* <span>WE CREATE</span><br /> */}
-                    <h5>STRATEGIC WEB EXPERIENCES</h5>
-                    <h1>
+                <div className="content container" style={{ marginTop: '10px', marginLeft: '5%' }}>
+                    <h1 className='firdt' style4 style={{ marginBottom: '20px'}}
+                    >
                         <TypeAnimation className='typeAnimation'
                             sequence={[
-                                'WEBSITE DEVELOPMENT', // Types 'One'
+                                'WEBSITE DEVELOPMENT SERVICES', // Types 'One'
                                 1000, // Waits 1s
-                                'SOFTWARE DEVELOPMENT', // Deletes 'One' and types 'Two'
+                                'SOFTWARE DEVELOPMENT SOLUTIONS', // Deletes 'One' and types 'Two'
                                 2000, // Waits 2s
                             ]}
                             wrapper="span"
@@ -37,14 +40,20 @@ const Home = () => {
                         // repeat={Infinity}
                         />
                     </h1>
-                    <h4>DRIVING <b>GROWTH</b> & <b>REVENUE</b></h4>
-                    <h4>FOR YOUR BUSINESS<span className='dot' style={{ color: 'orangered', fontSize: '50px' }}>.</span></h4>
-                    <Link to="/mainContact">Let's Build</Link>
+                    <h4>DRIVING <b>GROWTH</b> & <b>REVENUE</b> FOR YOUR BUSINESS</h4>
+                    <h5>Crafting Strategic Web Experiences<span className='dot' style={{ color: 'orangered', fontSize: '50px' }}>.</span></h5>
+    
+                    <Link to="/mainContact" title="Contact Fluencer Digital" style={{marginBottom:'20px'}}>
+                        Start Your Project
+                    </Link>
                 </div>
-                {/* <div>
-                    <a href="#"><img className='arrow' src={Arrow} style={{ width: '60px', position: 'relative', bottom: '-300px' }} alt="" /></a>
-                </div> */}
             </div>
+            <About />
+            <Services />
+            <Works />
+            <Us />
+            <Testimonials />
+            <MainContact />
         </>
     )
 }

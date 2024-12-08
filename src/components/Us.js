@@ -1,90 +1,93 @@
 import React, { useEffect, useState } from 'react'
-
 import back from '../components/MaskGroup.png'
 import { NavLink } from "react-router-dom"
-
-// import { useInView } from 'react-intersection-observer';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Technology1 from './Technology1'
-import Technology2 from './Technology2'
+import Technology2 from './Technology2' // Make sure Technology2, Technology3, and Technology4 are created similarly
 import Technology3 from './Technology3'
 import Technology4 from './Technology4'
 
 const Us = () => {
-
-  // for animation
-  //  const { ref: myRef, inView: myElementIsVisible } = useInView();
-
-  //AOS animation
-
   useEffect(() => {
     Aos.init({ duration: 500 });
   }, [])
 
-
-
-  //change the section
-  const [showtab, setShowtab] = useState("tab1");
+  const [showTab, setShowTab] = useState("tab1");
 
   return (
     <>
-      <section>
-        <div className='Us'
-          style={{ backgroundImage: `url(${back})`, backgroundRepeat: 'no-repeat' }}
+      <section aria-labelledby="why-us"  style={{paddingTop:'8%'}}>
+        <div
+          className="Us"
+          style={{
+            backgroundImage: `url(${back})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: '#000', // fallback color
+          }}
+          aria-label="Background for Why Us section"
         >
           <div className="cont">
-            <div>
-              <h3 className='h3title-Us' style={{ color: 'white', fontSize: '2.75rem' }}>Why Us<span style={{ color: 'orangered', fontSize: '2.8rem' }}>?</span></h3>
-            </div>
-            <div className="firstContent " data-aos="slide-right" > {/*{`${'firstContent hid'} ${myElementIsVisible? 'show': 'hid'}`}  ref={myRef}  */}
-              <div className="para1 my-3 mx-4">
-                <div className="box1">
-                  <h2 className='h2-Us'>01</h2>
-                  <h3 className='h3-Us' style={{ color: '#fff', bottom: '20px', position: 'relative' }}>Expertise<br />Team<span style={{ color: 'orangered' }}>.</span></h3>
+            {/* Header */}
+            <header>
+              <h1 id="why-us" className="h3title-Us" style={{ color: 'white', fontSize: '2.75rem' }}>
+                Why Us<span style={{ color: 'orangered', fontSize: '2.8rem' }}>?</span>
+              </h1>
+            </header>
+
+            {/* Unique Selling Points */}
+            <div className="firstContent" data-aos="slide-right">
+              {[
+                { number: "01", title: "End-to-End Project", description: "We handle every aspect of the project, from requirements gathering to deployment, ensuring a smooth process." },
+                { number: "02", title: "On-Time Delivery", description: "Our commitment to excellence ensures timely delivery, keeping you competitive in the digital landscape." },
+                { number: "03", title: "Latest Technology", description: "Leveraging cutting-edge technology, we deliver solutions that drive success and competitiveness." },
+                { number: "04", title: "24/7 Support", description: "Our team provides round-the-clock support, ensuring assistance whenever needed." }
+              ].map((item, index) => (
+                <div key={index} className="para1 my-3 mx-4">
+                  <div className="box1">
+                    <h2 className="h2-Us">{item.number}</h2>
+                    <h3 className="h3-Us" style={{ color: '#fff', position: 'relative', bottom: '20px', marginLeft:'5%' }}>
+                      {item.title}<span style={{ color: 'orangered' }}>.</span>
+                    </h3>
+                  </div>
+                  <span className="span-Us" style={{ color: 'gray' }}>{item.description}</span>
                 </div>
-                <span className='span-Us' style={{ color: 'gray' }}>Our software company boasts an exceptional team of experienced professionals, dedicated to delivering innovative solutions that exceed your expectations.</span>
-              </div>
-              <div className="para1 my-3 mx-4">
-                <div className="box1">
-                  <h2 className='h2-Us'>02</h2>
-                  <h3 className='h3-Us' style={{ color: '#fff', bottom: '20px', position: 'relative' }}>On-Time<br />Delivery<span style={{ color: 'orangered' }}>.</span></h3>
-                </div>
-                <span className='span-Us' style={{ color: 'gray' }}>Our commitment to excellence ensures on-time delivery of our software solutions, empowering your business to stay ahead in a rapidly evolving digital landscape.</span>
-              </div>
-              <div className="para1 my-3 mx-4">
-                <div className="box1">
-                  <h2 className='h2-Us'>03</h2>
-                  <h3 className='h3-Us' style={{ color: '#fff', bottom: '20px', position: 'relative' }}>Latest<br />Technology<span style={{ color: 'orangered' }}>.</span></h3>
-                </div>
-                <span className='span-Us' style={{ color: 'gray' }}>We harness the power of the latest technology, enabling us to craft cutting-edge software solutions that propel your business towards unmatched success and competitiveness.</span>
-              </div>
-              <div className="para1 my-3 mx-4">
-                <div className="box1">
-                  <h2 className='h2-Us'>04</h2>
-                  <h3 className='h3-Us' style={{ color: '#fff', bottom: '20px', position: 'relative' }}>24*7<br />Support<span style={{ color: 'orangered' }}>.</span></h3>
-                </div>
-                <span className='span-Us' style={{ color: 'gray' }}>Our dedicated team provides round-the-clock support, ensuring that your business recevies prompt assistance and peace of mind, no matter the time or day.</span>
-              </div>
+              ))}
             </div>
           </div>
+
+          {/* Technologies Section */}
           <div className="secondContent container" style={{ marginTop: '100px' }}>
-            <div>
-              <h3 className='h3title' style={{ color: 'white', fontSize: '2.75rem' }}>Techonologies We Work<span style={{ color: 'orangered' }}>.</span></h3>
-            </div>
-            <div className="smallNav" >
-              <ul className='nav nav-underline'>
-                <li className='nav-item'><NavLink className='nav-link1' onClick={() => setShowtab("tab1")}>Frontend</NavLink></li>
-                <li className='nav-item'><NavLink className='nav-link1' onClick={() => setShowtab("tab2")}>Backend</NavLink></li>
-                <li className='nav-item'><NavLink className='nav-link1' onClick={() => setShowtab("tab3")}>Database</NavLink></li>
-                <li className='nav-item'><NavLink className='nav-link1' onClick={() => setShowtab("tab4")}>Mobile</NavLink></li>
+            <header>
+              <h2 className="h3title" style={{ color: 'white', fontSize: '2.75rem' }}>
+                Technologies We Work With<span style={{ color: 'orangered' }}>.</span>
+              </h2>
+            </header>
+
+            {/* Navigation Tabs */}
+            <section className="smallNav" aria-label="Technology categories">
+              <ul className="nav nav-underline">
+                {["Frontend", "Backend", "Database", "Mobile"].map((tab, idx) => (
+                  <li key={tab} className="nav-item">
+                    <NavLink
+                      className="nav-link1"
+                      to={`#${tab.toLowerCase()}`}
+                      onClick={() => setShowTab(`tab${idx + 1}`)}
+                      aria-current={showTab === `tab${idx + 1}` ? "page" : undefined}
+                    >
+                      {tab}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
-            </div>
-            <div className='tabs'>
-              {showtab === "tab1" && <Technology1 title="1" />}
-              {showtab === "tab2" && <Technology2 title="2" />}
-              {showtab === "tab3" && <Technology3 title="3" />}
-              {showtab === "tab4" && <Technology4 title="4" />}
+            </section>
+
+            {/* Tabs Content */}
+            <div className="tabs" role="tabpanel">
+              {showTab === "tab1" && <Technology1 />}
+              {showTab === "tab2" && <Technology2 />}
+              {showTab === "tab3" && <Technology3 />}
+              {showTab === "tab4" && <Technology4 />}
             </div>
           </div>
         </div>

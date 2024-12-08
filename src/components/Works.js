@@ -1,8 +1,14 @@
-import React, {useEffect} from 'react'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+// Works.js
+import React, { useEffect, useRef, useState } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { Navigation, A11y } from 'swiper/modules';
 import WorkComponent from './WorkComponent';
-import WorkComponent2 from './WorkComponent2';
 import JIT from "./images/JIT update-min.jpg";
 import Keith from "./images/Keithston update-min.jpg";
 import tpr from './Works/planetreserve.png';
@@ -107,45 +113,62 @@ const workItems = [
     },
 ];
 
-const OurWorks = () => {
+const Works = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const mainSwiperRef = useRef(null);
 
-  useEffect(()=>{
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, []);
 
-    Aos.init({ duration: 500});
-  }, [])
+    const handleSlideChange = (swiper) => {
+        // Use realIndex instead of activeIndex to correctly track the index in a looped Swiper
+        setActiveIndex(swiper.realIndex);
+    };
 
-  return (
-    <div className='ourWork container1'>
-      <div>
-        <h1 className='heading' style={{ color: '#fff', WebkitTextStroke: '0px', textAlign: 'center', zIndex: '-1' }}>Our Works<span style={{ color: 'orangered', fontSize: '2.8rem' }}>.</span></h1>
-      </div>
-      
-      {workItems.map((work, index) => (
-    <div style={{ margin: '65px 0px' }} key={index}>
-        {index % 2 === 0 ? (
-            <WorkComponent
-                image={work.image}
-                title={work.title}
-                description1={work.description1}
-                description2={work.description2}
-                link={work.link}
-            />
-        ) : (
-            <WorkComponent2
-                image={work.image}
-                title={work.title}
-                description1={work.description1}
-                description2={work.description2}
-                link={work.link}
-            />
-        )}
-    </div>
-))}
+    return (
+        <section>
+            <div className='works cont' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px' }}>
+                <div data-aos="slide-left">
+                    <h3 className='h3title' style={{ color: 'white', fontSize: '2.75rem', marginTop: '10%' }}>Our Works<span style={{ color: 'orangered' }}>.</span></h3>
+                </div>
+            </div>
 
+            {/* Works Carousel */}
+            <Swiper
+                modules={[Navigation, A11y]}
+                navigation
+                loop={true}
+                spaceBetween={5}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
+                onSlideChange={handleSlideChange}
+                // modules={[EffectFade]} effect="fade"
+            >
+                {workItems.map((work, index) => (
+                    <SwiperSlide key={index}>
+                        <WorkComponent
+                            image={work.image}
+                            title={work.title}
+                            description1={work.description1}
+                            description2={work.description2}
+                            link={work.link}
+                        />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
 
-      
-    </div>
-  )
-}
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop:'3%' }}>
+                <img
+                    src={workItems[activeIndex].logo}
+                    alt={`${workItems[activeIndex].title} logo`}
+                    style={{ height: '60px', objectFit: 'contain', borderRadius:'44px' }}
+                />
+            </div>
+        </section>
+    );
+};
 
-export default OurWorks
+export default Works;

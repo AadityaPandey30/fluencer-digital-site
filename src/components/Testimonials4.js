@@ -6,15 +6,15 @@ import image3 from '../components/Testimonial/NewtonSchools-modified.png'
 const Testimonials4 = () => {
     return (
         <div class="Testimonials card">  {/* key={item.id} */}
-            <img className='quote' src={quotePng} alt="" />
+            <img className='quote' src={quotePng} alt="quote Fluencer digital" />
             <img src={image3} class="card-img-top" alt=".." />  {/*{item.images} */}
             <div> 
-                <img className='overlay-imgMain' id="customer-img" src={image} alt="" />
+                <img className='overlay-imgMain' id="customer-img" src={image} alt="client" />
             </div>
             <div className="Testi card-body">
                 <h5 class="Test-card-title" id="customer-name"><b>Shrey Singh</b></h5>  {/*{item.name} */}
                 <h5>(Senior Associate- Newton School)</h5>  {/*{item.title} */}
-                <p className='TestiPara' id="customer-text">Outstanding work! Fluencer Digital exceeded our expectations with their Website Development.</p>  {/*{item.quote} */}
+                <p className='TestiPara' id="customer-text">Outstanding work! Fluencer Digital exceeded our expectations with their Website Development.</p>  
                 <br/>
                 {/* <p class="" id="customer-text">Highly recommend Fluencer Digital for their expertise and professionalism. Our project was a success thanks to their dedication.</p> */}
                 <p class=""><small class="text-body-secondary">Last updated 3 mins ago</small></p>

@@ -27,10 +27,10 @@ useEffect(()=>{
   }, [])
 
     return (
-        <div className="container"> {/*data-aos="fade-up" {`${'hid2 container'} ${myElementIsVisible? 'show': 'hid2'}`} ref={myRef} */}
+        <footer className="container"> {/*data-aos="fade-up" {`${'hid2 container'} ${myElementIsVisible? 'show': 'hid2'}`} ref={myRef} */}
             <div>
                 <nav className='FooterNav'>
-                    <Link className="navbar-brand" to="/"><img src={Logo} alt="Logo" className='LogoFooter' /></Link>
+                    <Link className="navbar-brand" to="/"><img src={Logo} alt="Fluencer Digital Logo" className='LogoFooter' /></Link>
                     <ul className="Footer-ul nav justify-content-between">
                         <li className="nav-link">
                             <Link className="link-a active" aria-current="page" to="/">Home</Link>
@@ -65,7 +65,7 @@ useEffect(()=>{
                     <a style={{border:'none', margin:'0', padding:'0'}} href="https://topmate.io/yash_kandoi/432383"><img src={Consult} style={{width:'25px', margin: '10px'}} alt="" /></a>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

@@ -6,15 +6,13 @@ import web3 from './Our Services/Website Development/FRONT-END.png'
 import web4 from './Our Services/Website Development/PWA.png'
 import web5 from './Our Services/Website Development/SAAS.png'
 // import web6 from './Our Services/Website Development/Website Development.jpg'
-import web6 from './Our Services/Website Development/web-development.jpg'
+import web6 from './web1.png'
 // import { useInView } from 'react-intersection-observer';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 const OurServices = () => {
 
-    // for animation
-    //   const { ref: myRef, inView: myElementIsVisible } = useInView();
 
     useEffect(() => {
         Aos.init({ duration: 500 });
@@ -22,72 +20,98 @@ const OurServices = () => {
 
     return (
         <>
-                <div>
-                    <div className="Back-img-Service">
-                        <div className='img-back'>
-                            <img src={web6} alt="" />
-                        </div>
-                        <h2 style={{ color: '#fff', WebkitTextStroke: '0px', textAlign: 'center' }}>Website Development<span style={{ color: 'orangered', fontSize: '2.8rem' }}>.</span></h2>
-                    </div>
-                </div>
-                <div className='container'>
-                    <div className="row row-cols-1 row-cols-md-3 g-4">
-                        <div className="col" data-aos="slide-left" > {/* {`${'hid col'} ${myElementIsVisible? 'show': 'hid'}`}ref={myRef}*/}
-                            <img src={web3} className="card-img1-top" alt="..." />
-                            <div className="web1 card">
-                                <div className="card-body1">
-                                    <h4 className="card-title1">Front-end Web Development</h4>
-                                    <p className="card-text1" style={{ color: 'gray' }}>Utilize the reusable components and deliver component-driven architecture using advanced Frontend technologies like React.js,Angular, and Vue.js.Fluencer is a web application development company that combines amazing UI designs with required functionalities effortlessly.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col" data-aos="slide-left"> {/*{`${'hid col'} ${myElementIsVisible? 'show': 'hid'}`} ref={myRef} */}
-                            <img src={web} className="card-img1-top" alt="..." />
-                            <div className="web1 card">
-                                <div className="card-body1">
-                                    <h4 className="card-title1">Back-end Web Developemnt</h4>
-                                    <p className="card-text1" style={{ color: 'gray' }}>Seamlessly navigate between multiple features of an application by accessing the talented pool of backend web developers who can make your application scalable. We offer AWS and Azure services to host the backend services on cloud, and SQL and NoSQL databases to store and fetch data reliably using Microservices .</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col" data-aos="slide-left"> {/* {`${'hid col'} ${myElementIsVisible? 'show': 'hid'}`} ref={myRef} */}
-                            <img src={web5} className="card-img1-top" alt="..." />
-                            <div className="web1 card">
-                                <div className="card-body1">
-                                    <h4 className="card-title1">Saas Development</h4>
-                                    <p className="card-text1" style={{ color: 'gray' }}>Comprehensively delve deep into the client's need to understand the scope of web application and its expandability. Our team of web app developers are adept and backed up by technical soundness to offer secured and multi-tenant SaaS application development solutions benefiting business in the longer run.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col" data-aos="slide-right">  {/*{`${'hid1 col'} ${myElementIsVisible? 'show': 'hid1'}`} ref={myRef}  */}
-                            <img src={web4} className="card-img1-top" alt="..." />
-                            <div className="web1 card">
-                                <div className="card-body1">
-                                    <h4 className="card-title1">Progressive Web Apps(PWA)</h4>
-                                    <p className="card-text1" style={{ color: 'gray' }}>Aligning to the modern needs of app development, we create native web apps with enhanced technology features, faster application load times, highly interactive visual content and hassle-free navigation between distinct features within the apllication.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col" data-aos="slide-right"> {/*{`${'hid1 col'} ${myElementIsVisible? 'show': 'hid1'}`} ref={myRef}  */}
-                            <img src={web2} className="card-img1-top" alt="..." />
-                            <div className="web1 card">
-                                <div className="card-body1">
-                                    <h4 className="card-title1">E-Commerce</h4>
-                                    <p className="card-text1" style={{ color: 'gray' }}>Customize and build eCommerce Web Apps using Shopify, Magento and custom frameworks to amplify business growth and boost online web presence. Our adept web developers ensure growth and user engagement by developing aglie, secure, & user-friendly eCommerce apps.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col" data-aos="slide-right">  {/*{`${'hid1 col'} ${myElementIsVisible? 'show': 'hid1'}`} ref={myRef}*/}
-                            <img src={web1} className="card-img1-top" alt="..." />
-                            <div className="web1 card">
-                                <div className="card-body1">
-                                    <h4 className="card-title1">Custom Software Development</h4>
-                                    <p className="card-text1" style={{ color: 'gray' }}>We help you deliver superior web development services combined with expert resources, technical prowess to strengthen overall business strategy. Our experience in custom web app development assures compatibility, scalability and intuitive user experiences.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                 <section className="Back-img-Service">
+        <div className='img-back'>
+          <div style={{margin:'auto', width:'fit-content'}}>
+          <img src={web6} alt="Website development background"  style={{width:'fit' }} />
+          </div>
+        </div>
+        <h2 style={{ color: '#fff', WebkitTextStroke: '0px', textAlign: 'center' }}>
+          Website Development<span style={{ color: 'orangered', fontSize: '2.8rem' }}>.</span>
+        </h2>
+      </section>
+
+      <section className='container'>
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+          {/* Frontend Web Development */}
+          <article className="col" data-aos="slide-left">
+            <img src={web3} className="card-img1-top" alt="Frontend Web Development" />
+            <div className="web1 card" style={{minHeight:'30vh'}}>
+              <div className="card-body1" >
+                <h3 className="card-title1">Front-end Web Development</h3>
+                <p className="card-text1" style={{ color: 'gray' }}>
+                  Utilize reusable components and deliver component-driven architecture using advanced frontend technologies like React.js, Angular, and Vue.js. Fluencer is a web application development company that combines amazing UI designs with required functionalities effortlessly.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          {/* Backend Web Development */}
+          <article className="col" data-aos="slide-left">
+            <img src={web} className="card-img1-top" alt="Backend Web Development" />
+            <div className="web1 card" style={{minHeight:'30vh'}}>
+              <div className="card-body1">
+                <h3 className="card-title1">Back-end Web Development</h3>
+                <p className="card-text1" style={{ color: 'gray' }}>
+                  Access our skilled backend web developers to make your application scalable. We offer AWS and Azure services to host backend services on cloud, and use SQL and NoSQL databases for reliable data storage with Microservices architecture.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          {/* SaaS Development */}
+          <article className="col" data-aos="slide-left">
+            <img src={web5} className="card-img1-top" alt="SaaS Development Services" />
+            <div className="web1 card" style={{minHeight:'30vh'}}>
+              <div className="card-body1">
+                <h3 className="card-title1">SaaS Development</h3>
+                <p className="card-text1" style={{ color: 'gray' }}>
+                  We dive deep to understand your web app’s scope and expandability. Our skilled team provides secure, multi-tenant SaaS application development, enabling sustainable growth for businesses.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          {/* Progressive Web Apps */}
+          <article className="col" data-aos="slide-right">
+            <img src={web4} className="card-img1-top" alt="Progressive Web App Development" />
+            <div className="web1 card" style={{minHeight:'30vh'}}>
+              <div className="card-body1">
+                <h3 className="card-title1">Progressive Web Apps (PWA)</h3>
+                <p className="card-text1" style={{ color: 'gray' }}>
+                  We create native web apps with advanced technology features, quick load times, and interactive content, providing smooth navigation and user experience within the application.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          {/* E-commerce Development */}
+          <article className="col" data-aos="slide-right">
+            <img src={web2} className="card-img1-top" alt="E-Commerce Web Development" />
+            <div className="web1 card" style={{minHeight:'30vh'}}>
+              <div className="card-body1">
+                <h3 className="card-title1">E-Commerce Development</h3>
+                <p className="card-text1" style={{ color: 'gray' }}>
+                  Build custom eCommerce applications using Shopify, Magento, or custom frameworks. Our team ensures growth with agile, secure, and user-friendly eCommerce solutions.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          {/* Custom Software Development */}
+          <article className="col" data-aos="slide-right">
+            <img src={web1} className="card-img1-top" alt="Custom Software Development" />
+            <div className="web1 card" style={{minHeight:'30vh'}}>
+              <div className="card-body1">
+                <h3 className="card-title1">Custom Software Development</h3>
+                <p className="card-text1" style={{ color: 'gray' }}>
+                  We offer expert resources and technical expertise for custom web app development, ensuring compatibility, scalability, and an intuitive user experience.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
         </>
     )
 }

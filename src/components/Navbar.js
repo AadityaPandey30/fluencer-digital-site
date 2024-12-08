@@ -35,7 +35,7 @@ const Navbar = () => {
     })
 
     return (
-        <div className='hero1'>
+        <header className='hero1'>
 
             {/*Middle navbar */}
 
@@ -76,13 +76,13 @@ const Navbar = () => {
             <nav className="navbar navbar-dark  fixed-top" style={{ zIndex: '1' }}>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/"><img src={Logo} alt="Logo" className='Logo' /></Link>
-                    {open === true ||
+                    
                     <button className="navbar-toggler sideNav" data-aos="slide-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                         <span className="navbar-toggler"><img src={sideBar} style={{ width: '40px' }} alt='sidebar' /></span>
-                    </button> }
+                    </button> 
                     <div className="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                         <div className="offcanvas-header">
-                            <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel" style={{ color: '#ED1C24' }}><img src={Logo} style={{ width: '60px' }} />Fluencer</h5>
+                            <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel" style={{ color: '#ED1C24' }}><img src={Logo} alt="logo" style={{ width: '60px' }} />Fluencer</h5>
                             <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div className="offcanvas-body">
@@ -118,7 +118,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-        </div>
+        </header>
     )
 }
 

@@ -64,7 +64,7 @@ body {
 .contain .overlay {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 121dvh;
+  height: 128dvh;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -119,8 +119,8 @@ nav {
 
 .hero {
   width: 100%;
-  height: 121dvh;
-  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  height: 128dvh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.8), rgba(12, 3, 51, 0.8));
   position: relative;
   padding: 0% 5%;
   display: flex;
@@ -128,7 +128,8 @@ nav {
   justify-content: center;
 }
 
-.container h1 {
+
+.firdt {
   /* font-size: 120px; */
   color: transparent;
   font-weight: 600;
@@ -142,7 +143,7 @@ nav {
 
 .typeAnimation{
   color: transparent !important;
-  font-size: 100px !important;
+  font-size: 90px !important;
   display: inline-block !important;
   /* -webkit-text-stroke: 8px transparent;
     background: linear-gradient(174deg, red,#ff8181,#fff, transparent);
@@ -1023,14 +1024,15 @@ label {
 /* OUR SERVICES Section*/
 .img-back {
   margin-top: 130px;
+  width: 100%;
 }
 
 .img-back img {
-  height: 55vh;
-  width: 100vw;
+  max-height: 80vh;
+  width: fit-content;
   filter: brightness(0.4);
-  position: sticky;
-  z-index: -2;
+  /* position: sticky;
+  z-index: -2; */
 }
 
 .Back-img-Service h2 {
@@ -1056,10 +1058,10 @@ label {
 
 .card-img1-top {
   background: #fff !important;
-  padding: 20px !important;
-  margin-left: 77px !important;
+  padding: 12px !important;
+  margin-left: 20px !important;
   width: 20% !important;
-  margin-top: -10px !important;
+  margin-top: -6px !important;
   position: absolute;
   z-index: 1;
   border: none;
@@ -1422,7 +1424,7 @@ button:focus:not(:focus-visible) {
   /*Us Section*/
   .box1 {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: space-between;
     width: 80%;
   }
@@ -1791,7 +1793,7 @@ button:focus:not(:focus-visible) {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    margin-top: 180px;
+    margin-top: 4%;
   }
 
   /* Navbar Section*/
@@ -2129,7 +2131,7 @@ button:focus:not(:focus-visible) {
 
   .card-img1-top {
     margin-top: -12px !important;
-    width: 20% !important;
+    width: 14% !important;
   }
 
   .card-text1 {
@@ -2676,7 +2678,11 @@ button:focus:not(:focus-visible) {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 15px;
+    margin-left: 10%;
+  }
+
+  .first12{
+    flex-direction: column-reverse;
   }
 
   .services {

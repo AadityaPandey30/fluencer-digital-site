@@ -7,8 +7,8 @@ import image2 from '../components/Testimonial/DirectorJit.png'
 const Testimonials1 = () => { 
     return (
         <div class="Testimonials card">  {/* key={item.id} */}
-            <img className='quote' src={quotePng} alt="" />
-            <img src={image2} class="card-img-top" alt=".." />  {/*{item.images} */}
+            <img className='quote' src={quotePng} alt="quote Fluencer Digital Client" loading='lazy' />
+            <img src={image2} class="card-img-top" alt="client" loading='lazy' />  {/*{item.images} */}
             <div> 
                 <img className='overlay-imgMain' id="customer-img" src={image} alt="" />
             </div>
