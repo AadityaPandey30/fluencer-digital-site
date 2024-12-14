@@ -16,6 +16,8 @@ import OurServicesThree from './components/OurServicesThree';
 import OurServicesFour from './components/OurServicesFour';
 import Privacy from './components/Privacy';
 import ScrollToTop from './components/ScrollToTop';
+import AboutUs from './components/AboutUs';
+import Blogs from './components/Blogs';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/Services3" element={<OurServicesThree />} />
           <Route path="/Services4" element={<OurServicesFour />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/blogs" element={<Blogs />} />
         </Routes>
         <Footer />
       </Router>

@@ -89,6 +89,7 @@ body {
 nav {
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .Logo {
@@ -251,7 +252,7 @@ nav {
   right: 0;
   left: 0;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   overflow: hidden;
   background-color: #000;
@@ -978,7 +979,6 @@ label {
   margin: auto !important;
 }
 
-
 .heading{
   color: rgb(255, 255, 255);
     -webkit-text-stroke: 0px;
@@ -1100,7 +1100,6 @@ label {
   margin: 30px;
 }
 
-
 /*Navbar Section*/
 .offcanvas.show:not(.hiding),
 .offcanvas.showing {
@@ -1124,7 +1123,6 @@ label {
   justify-content: center;
   background: #000;
 }
-
 
 .dropdown-menu {
   /* background-color: #ffffffb0 !important;
@@ -1459,8 +1457,8 @@ button:focus:not(:focus-visible) {
 
   .Testimonials {
     border: none !important;
-    width: 27vw !important;
-    height: 55vh !important;
+    width: 38vw !important;
+    height: 38vh !important;
     cursor: pointer;
     position: relative;
     display: flex;
@@ -1469,7 +1467,7 @@ button:focus:not(:focus-visible) {
   }
 
   .carousel-inner {
-    width: 29vw;
+    width: 38vw;
   }
   
   .carousel-item {
@@ -1731,8 +1729,8 @@ button:focus:not(:focus-visible) {
   /*Testimonails section*/
   .Testimonials {
     border: none !important;
-    width: 30vw !important;
-    height: 54vh !important;
+    width: 38vw !important;
+    height: 38vh !important;
     cursor: pointer;
     position: relative;
     display: flex;
@@ -1741,7 +1739,7 @@ button:focus:not(:focus-visible) {
   }
 
   .carousel-inner {
-    width: 32vw;
+    width: 38vw;
   }
   
   .carousel-item {
@@ -2469,13 +2467,15 @@ button:focus:not(:focus-visible) {
     right: 0;
     bottom: 0;
     z-index: -1;
-    width: 150% !important;
+    /* width: 150% !important; */
+    width: auto;
+    height:80vh;
     left: 0;
     top: 0;
   }
 
   .hero {
-    height: 50dvh !important;
+    height: 80dvh !important;
     background: transparent !important;
   }
 
@@ -2497,7 +2497,7 @@ button:focus:not(:focus-visible) {
   } */
   .typeAnimation{
     color: transparent !important;
-    font-size: 22px !important;
+    font-size: 50px !important;
     display: inline-block !important;
   }
 
@@ -2617,11 +2617,11 @@ button:focus:not(:focus-visible) {
 
   .card {
     border: none !important;
+    flex:none;
     width: 40%;
-    height: 30vh;
     cursor: pointer;
-    position: relative;
-    margin-top: 30px;
+    /* position: relative; */
+    margin-bottom: 30px;
   }
 
   .card-div {
@@ -2630,25 +2630,6 @@ button:focus:not(:focus-visible) {
     flex-wrap: nowrap;
     align-items: center;
   }
-
-  /*card modification for mobile*/
-  /* .card-overlay {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: var(--bs-card-img-overlay-padding);
-    border-radius: var(--bs-card-inner-border-radius);
-    align-items: start;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: #000;
-    overflow: hidden;
-    height: 0;
-    transition: .5s ease;
-  } */
 
   .card-overlay {
     position: fixed;
@@ -2661,17 +2642,10 @@ button:focus:not(:focus-visible) {
    .card-img {
     /* transition:none !important; 
      transition-delay: none !important; */
+     height: auto;
     right: 90px;
     position: relative;
   }
-
-  /*
-  .card:hover .card-overlay{
-    height: 100%;
-  } */
-
-
-  /* Work section*/
 
   .first {
     display: flex;
@@ -2837,13 +2811,13 @@ button:focus:not(:focus-visible) {
 
   /*Tesitimonials sections*/
   .Testimonial-main {
-    margin-top: 720px !important;
+    margin-top: 780px !important;
   }
 
   .Testimonials {
     border: none !important;
     width: 63vw !important;
-    height: 48vh !important;
+    height: 46vh !important;
     cursor: pointer;
     position: relative;
     display: flex;
@@ -2852,7 +2826,7 @@ button:focus:not(:focus-visible) {
   }
    
   .carousel-inner {
-    width: 65vw;
+    width: 100%;
   }
   
   .carousel-item {
@@ -3016,6 +2990,14 @@ button:focus:not(:focus-visible) {
     position: relative;
   }
 
+.part1{
+  display: none;
+}
+
+.part2{
+  display: none;
+}
+
   /*Main Contact*/
   .mainContact {
     margin-top: 90px !important;
@@ -3115,7 +3097,7 @@ button:focus:not(:focus-visible) {
   } */
   .typeAnimation{
     color: transparent !important;
-    font-size: 22px !important;
+    font-size: 40px !important;
     display: inline-block !important;
   }
 
@@ -3136,11 +3118,26 @@ button:focus:not(:focus-visible) {
   }
 
   .container {
-    margin-top: 0px !important;
+    margin: 14% 0px !important;
   }
 
-  .content {
+  /* .content {
     margin-top: -60px !important;
+  } */
+
+  .mainContext {
+    margin: 0;
+  }
+
+  .Testimonials {
+    border: none !important;
+    width: 63vw !important;
+    height: 56vh !important;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
   }
 
   .arrow {
@@ -3156,9 +3153,9 @@ button:focus:not(:focus-visible) {
     height: 12vh !important;
   } */
 
-  .hero {
+  /* .hero {
     height: 48dvh !important;
-  }
+  } */
 
   .container a {
     font-size: 12px;
@@ -3199,11 +3196,6 @@ button:focus:not(:focus-visible) {
   .technology img {
     width: 12% !important;
     margin: 10px;
-  }
-
-  .Testimonial-main {
-    margin-top: 700px !important;
-    /*350px*/
   }
 
   /*Contact Section*/

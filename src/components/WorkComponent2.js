@@ -9,7 +9,7 @@ const WorkComponent = ({ image, title, description1, description2, link }) => {
             <div className='work' data-aos="slide-right" >
                 <h3 style={{ color: '#fff' }}>{title}<span style={{ color: 'orangered' }}>.</span></h3>
                 <p className='p1' style={{ color: 'gray', textAlign:'justify' }}>{description1}</p><br />
-                <p className='p1' style={{ color: 'gray', textAlign:'justify' }}>{description2}</p>
+                <p className='p1' style={{ color: 'gray', textAlign:'justify' }}dangerouslySetInnerHTML={{ __html: description2 }}></p>
                 <br />
                 <Link className='workbtn' to={link} target="_blank" rel="noopener noreferrer">Visit Site</Link>
             </div>

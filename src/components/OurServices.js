@@ -40,11 +40,12 @@ const OurServices = () => {
               <div className="card-body1" >
                 <h3 className="card-title1">Front-end Web Development</h3>
                 <p className="card-text1" style={{ color: 'gray' }}>
-                  Utilize reusable components and deliver component-driven architecture using advanced frontend technologies like React.js, Angular, and Vue.js. Fluencer is a web application development company that combines amazing UI designs with required functionalities effortlessly.
+                  Utilize reusable components and deliver component-driven architecture using advanced frontend <a style={{border:'none', margin:'0', padding:'0', fontSize:'medium', color:'gray', textDecoration:'underline'}} href='https://amzn.to/3ZHB7OM'>technologies</a> like React.js, Angular, and Vue.js. Fluencer is a web application development company that combines amazing UI designs with required functionalities effortlessly.
                 </p>
               </div>
             </div>
           </article>
+          {/* <a style={{border:'none', }} href='https://amzn.to/3ZHB7OM'></a> */}
 
           {/* Backend Web Development */}
           <article className="col" data-aos="slide-left">
@@ -53,7 +54,7 @@ const OurServices = () => {
               <div className="card-body1">
                 <h3 className="card-title1">Back-end Web Development</h3>
                 <p className="card-text1" style={{ color: 'gray' }}>
-                  Access our skilled backend web developers to make your application scalable. We offer AWS and Azure services to host backend services on cloud, and use SQL and NoSQL databases for reliable data storage with Microservices architecture.
+                  Access our skilled backend web developers to make your application scalable. We offer AWS and Azure services to host backend services on <a style={{border:'none', margin:'0', padding:'0', fontSize:'medium', color:'gray', textDecoration:'underline'}} href='https://amzn.to/3ZIO8Yb'>cloud</a>, and use SQL and NoSQL databases for reliable data storage with Microservices architecture.
                 </p>
               </div>
             </div>
@@ -66,7 +67,7 @@ const OurServices = () => {
               <div className="card-body1">
                 <h3 className="card-title1">SaaS Development</h3>
                 <p className="card-text1" style={{ color: 'gray' }}>
-                  We dive deep to understand your web app’s scope and expandability. Our skilled team provides secure, multi-tenant SaaS application development, enabling sustainable growth for businesses.
+                  We dive deep to understand your web app’s scope and expandability. Our skilled team provides secure, multi-tenant SaaS <a style={{border:'none', margin:'0', padding:'0', fontSize:'medium', color:'gray', textDecoration:'underline'}} href='https://amzn.to/3ZKhNAv'>application</a> development, enabling sustainable growth for businesses.
                 </p>
               </div>
             </div>
@@ -79,7 +80,7 @@ const OurServices = () => {
               <div className="card-body1">
                 <h3 className="card-title1">Progressive Web Apps (PWA)</h3>
                 <p className="card-text1" style={{ color: 'gray' }}>
-                  We create native web apps with advanced technology features, quick load times, and interactive content, providing smooth navigation and user experience within the application.
+                  We create native web apps with <a style={{border:'none', margin:'0', padding:'0', fontSize:'medium', color:'gray', textDecoration:'underline'}} href='https://amzn.to/41mBgZ1'>advanced</a> technology features, quick load times, and interactive content, providing smooth navigation and user experience within the application.
                 </p>
               </div>
             </div>
@@ -92,7 +93,7 @@ const OurServices = () => {
               <div className="card-body1">
                 <h3 className="card-title1">E-Commerce Development</h3>
                 <p className="card-text1" style={{ color: 'gray' }}>
-                  Build custom eCommerce applications using Shopify, Magento, or custom frameworks. Our team ensures growth with agile, secure, and user-friendly eCommerce solutions.
+                  Build custom <a style={{border:'none', margin:'0', padding:'0', fontSize:'medium', color:'gray', textDecoration:'underline'}} href='https://amzn.to/4iv6Hqr'>eCommerce</a> applications using Shopify, Magento, or custom frameworks. Our team ensures growth with agile, secure, and user-friendly eCommerce solutions.
                 </p>
               </div>
             </div>
@@ -105,7 +106,7 @@ const OurServices = () => {
               <div className="card-body1">
                 <h3 className="card-title1">Custom Software Development</h3>
                 <p className="card-text1" style={{ color: 'gray' }}>
-                  We offer expert resources and technical expertise for custom web app development, ensuring compatibility, scalability, and an intuitive user experience.
+                  We offer expert resources and technical expertise for custom web app development, ensuring compatibility, scalability, and an intuitive <a style={{border:'none', margin:'0', padding:'0', fontSize:'medium', color:'gray', textDecoration:'underline'}} href='https://amzn.to/4iv6Hqr'>user experience</a>.
                 </p>
               </div>
             </div>

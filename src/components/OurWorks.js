@@ -117,7 +117,7 @@ const OurWorks = () => {
   return (
     <div className='ourWork container1'>
       <div>
-        <h1 className='heading' style={{ color: '#fff', WebkitTextStroke: '0px', textAlign: 'center', zIndex: '-1' }}>Our Works<span style={{ color: 'orangered', fontSize: '2.8rem' }}>.</span></h1>
+        <h1 className='heading' style={{ color: '#fff', WebkitTextStroke: '0px', textAlign: 'center', zIndex: '-1' }}>Case Studies<span style={{ color: 'orangered', fontSize: '2.8rem' }}>.</span></h1>
       </div>
       
       {workItems.map((work, index) => (

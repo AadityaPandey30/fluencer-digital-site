@@ -30,7 +30,7 @@ const Testimonials = () => {
     return (
         <>
             <section>
-                <div className='Testimonial-main cont'>
+                <div className='Testimonial-main cont' style={{marginTop:'10%'}}>
                     <div>
                         <i className="material-icons mx-3"><a href='/' className='slide-arrow' data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >&#xe5c4;</a></i>   {/*  onClick={() => setShowtab("part1")}*/}
                         <i className="material-icons mx-3"><a href='/' className='slide-arrow' data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >&#xe5c8;</a></i>   {/*onClick={() => setShowtab("part2")} */}

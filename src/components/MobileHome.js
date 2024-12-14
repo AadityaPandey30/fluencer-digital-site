@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import { TypeAnimation } from 'react-type-animation';
 import About from './About';
@@ -7,36 +7,12 @@ import Us from './Us';
 import Testimonials from './Testimonials';
 import MainContact from './MainContact';
 import Works from './Works';
-import MobileHome from './MobileHome';
 
-const Home = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    const checkScreenSize = () => {
-        setIsMobile(window.innerWidth <= 660);
-    };
-
-    useEffect(() => {
-        // Check screen size on component mount
-        checkScreenSize();
-
-        // Add event listener to update state on window resize
-        window.addEventListener('resize', checkScreenSize);
-
-        // Cleanup event listener on component unmount
-        return () => window.removeEventListener('resize', checkScreenSize);
-    }, []);
-
-    // Render MobileHome for mobile view
-    if (isMobile) {
-        return <MobileHome />;
-    }
-
-    // Render original Home component for other devices
-    return (
-        <>
-            <div className="hero" id="home" style={{ height: '128vh' }}>
-                <div className="contain" style={{ height: '128vh' }}>
+const MobileHome = () => {
+  return (
+    <div>
+      <div className="hero" id="home">
+                <div className="contain">
                     <video className='back-video' autoPlay loop muted playsInline preload="metadata">
                         <source src="/BGVideoMobile.mp4" type="video/mp4" />
                     </video>
@@ -45,7 +21,7 @@ const Home = () => {
                 </div>
 
                 <div className="content container" style={{ marginTop: '10px', marginLeft: '5%' }}>
-                    <h1 className='firdt' style={{ marginBottom: '20px' }}>
+                    <h1 className='firdt' style={{ marginBottom: '20px', fontSize:'40px' }}>
                         <TypeAnimation
                             className='typeAnimation'
                             sequence={[
@@ -58,8 +34,8 @@ const Home = () => {
                             cursor={false}
                         />
                     </h1>
-                    <h4>DRIVING <b>GROWTH</b> & <b>REVENUE</b> FOR YOUR BUSINESS</h4>
-                    <h5>Crafting Strategic Web Experiences<span className='dot' style={{ color: 'orangered', fontSize: '50px' }}>.</span></h5>
+                    <h4 style={{fontSize:'20px'}}>DRIVING <b>GROWTH</b> & <b>REVENUE</b> FOR YOUR BUSINESS</h4>
+                    <h5 style={{fontSize:'14px', margin:'4% 0 10% 0'}}>Crafting Strategic Web Experiences<span className='dot' style={{ color: 'orangered'}}>.</span></h5>
 
                     <Link to="/mainContact" title="Contact Fluencer Digital" style={{ marginBottom: '20px' }}>
                         Start Your Project
@@ -72,8 +48,8 @@ const Home = () => {
             <Us />
             <Testimonials />
             <MainContact />
-        </>
-    );
-};
+    </div>
+  )
+}
 
-export default Home;
+export default MobileHome

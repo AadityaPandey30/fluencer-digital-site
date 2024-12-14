@@ -51,12 +51,13 @@ useEffect(()=>{
                 </nav>
             </div>
             <div className='phone'>
-                <p>+91-8306067708 | yash.kandoi@fluencer.co.in</p>
+                <p>+91-8306067708 | ykandoi@fluencerdigital.com</p>
+                <p>+91-7987697671 | sarthak.behera@fluencerdigital.com</p>
                 <hr className='hr-line'/>
             </div>
             <div className='bottom-line' style={{display: 'flex' ,justifyContent: 'space-between'}}>
                 <div style={{color:'#fff'}}>
-                    <img src={copyright} style={{width:'5%', padding:'5px'}} alt="" />2023 Fluencer.All Rights Reserved.
+                    <img src={copyright} style={{width:'5%', padding:'5px'}} alt="" />2024 Fluencer.All Rights Reserved.
                 </div>
                 <div className='icon'>
                     <a style={{border:'none', margin:'0', padding:'0'}} href="mailto:yash.kandoi@fluencer.co.in"><img src={Email} style={{width:'25px', margin: '10px'}} alt="" /></a>

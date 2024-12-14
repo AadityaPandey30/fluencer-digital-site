@@ -85,7 +85,7 @@ const Contact = () => {
                                 fontWeight: '400',
                             }}
                         >
-                            Schedule a free consultation
+                            Contact Team Fluencer Digital
                             <span style={{ color: 'orangered', fontSize: '2.8rem' }}>
                                 .
                             </span>
@@ -135,7 +135,7 @@ const Contact = () => {
                                 required
                             ></textarea>
                             <label htmlFor='floatingMessage'>
-                                Tell Us A Little About Your Project...
+                                Project Details
                             </label>
                         </div>
                         <div className='col-12'>

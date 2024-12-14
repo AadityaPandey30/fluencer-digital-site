@@ -64,10 +64,16 @@ const Navbar = () => {
                         </li>
                     </li>
                     <li className="nav-item">
-                        <Link className="link" to="/ourWorks">Our Works</Link>
+                        <Link className="link" to="/ourWorks">Case Studies</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="link" to="/mainContact">Contact</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="link" to="/aboutus">About Us</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="link" to="/blogs">Blogs</Link>
                     </li>
                 </ul>
             </nav> }
@@ -102,10 +108,16 @@ const Navbar = () => {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/ourWorks">Our Works</Link>
+                                    <Link className="nav-link" to="/ourWorks">Case Studies</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/mainContact">Contact</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/aboutus">About Us</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/blogs">Blogs</Link>
                                 </li>
                             </ul>
                             <div className='icon'>

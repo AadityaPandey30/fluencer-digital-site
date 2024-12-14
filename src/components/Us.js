@@ -57,10 +57,10 @@ const Us = () => {
           </div>
 
           {/* Technologies Section */}
-          <div className="secondContent container" style={{ marginTop: '100px' }}>
+          <div className="secondContent container" style={{marginLeft:'4%'}}>
             <header>
               <h2 className="h3title" style={{ color: 'white', fontSize: '2.75rem' }}>
-                Technologies We Work With<span style={{ color: 'orangered' }}>.</span>
+                Technologies We Work With<span style={{ color: 'orangered', fontSize:'20px' }}>.</span>
               </h2>
             </header>
 
