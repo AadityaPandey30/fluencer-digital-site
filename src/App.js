@@ -18,6 +18,7 @@ import Privacy from './components/Privacy';
 import ScrollToTop from './components/ScrollToTop';
 import AboutUs from './components/AboutUs';
 import Blogs from './components/Blogs';
+import Blog from './components/Blog';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog/:id" element={<Blog />} />
         </Routes>
         <Footer />
       </Router>
