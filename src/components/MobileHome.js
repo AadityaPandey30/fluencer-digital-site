@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { TypeAnimation } from 'react-type-animation';
-import About from './About';
 import Services from './Services';
 import Us from './Us';
 import Testimonials from './Testimonials';
@@ -42,7 +41,6 @@ const MobileHome = () => {
                     </Link>
                 </div>
             </div>
-            {/* <About /> */}
             <Services />
             <Works />
             <Us />

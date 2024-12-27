@@ -36,14 +36,13 @@ const Blogs = () => {
               key={blog._id}
               className="flex flex-col items-center gap-6 bg-[#131313] p-4 md:p-10 rounded-2xl border-2 border-solid"
             >
-              <div className="bg-[#d9d9d9] w-full h-48"></div>
+              <img src={`http://localhost:5000${blog.image}`} className=" w-full h-2/3 max-h-[300px] rounded-md" alt="Fluencer Blogs"/>
               <div className="flex flex-col gap-6 self-stretch grow">
                 <div className="flex flex-col gap-2 self-stretch">
                   <span className="font-bold text-[28px] leading-[34px] text-white">
                     {blog.blog_title}
                   </span>
-                  <span className="font-normal text-[24px] leading-[34px] text-[#bebebe]">
-                    {blog.blog_content.slice(0, 100)}...
+                  <span className=" text-[#bebebe]" dangerouslySetInnerHTML={{ __html: blog.blog_content.slice(0,100)+"..." }}>
                   </span>
                 </div>
                 <div className="flex items-center gap-2.5 rounded-lg">

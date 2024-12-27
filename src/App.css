@@ -596,6 +596,10 @@ html:not(.no-js) [data-aos^=slide][data-aos^=slide].aos-animate {
   cursor: pointer;
 }
 
+.head{
+  color: #ED1C24;
+}
+
 .smallNav ul li a{
   text-decoration: none;
   border: none;
