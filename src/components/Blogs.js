@@ -8,7 +8,7 @@ const Blogs = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("https://admin-fluencer-blogs-b6ewhacwgdeyh8fw.eastasia-01.azurewebsites.net/api/blogs");
+        const response = await axios.get("https://admin-fluencer-blogs-b6ewhacwgdeyh8fw.southeastasia-01.azurewebsites.net/api/blogs");
         setBlogs(response.data);
       } catch (error) {
         console.error("Error fetching blogs:", error);
@@ -36,7 +36,7 @@ const Blogs = () => {
               key={blog._id}
               className="flex flex-col items-center gap-6 bg-[#131313] p-4 md:p-10 rounded-2xl border-2 border-solid"
             >
-              <img src={`https://admin-fluencer-blogs-b6ewhacwgdeyh8fw.eastasia-01.azurewebsites.net/${blog.image}`} className=" w-full h-2/3 max-h-[300px] rounded-md" alt="Fluencer Blogs"/>
+              <img src={`https://admin-fluencer-blogs-b6ewhacwgdeyh8fw.southeastasia-01.azurewebsites.net/${blog.image}`} className=" w-full h-2/3 max-h-[300px] rounded-md" alt="Fluencer Blogs"/>
               <div className="flex flex-col gap-6 self-stretch grow">
                 <div className="flex flex-col gap-2 self-stretch">
                   <span className="font-bold text-[28px] leading-[34px] text-white">
