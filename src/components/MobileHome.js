@@ -11,13 +11,20 @@ const MobileHome = () => {
   return (
     <div>
       <div className="hero" id="home">
-                <div className="contain">
-                    <video className='back-video' autoPlay loop muted playsInline preload="metadata">
-                        <source src="/BGVideoMobile.mp4" type="video/mp4" />
-                    </video>
-                    <div className="overlay"></div>
-                    <div className="overlay2"></div>
-                </div>
+      <div className="contain h-[80vh] w-auto ">
+    <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+    >
+        <source src="/BGVideoMobile.mp4" type="video/mp4" />
+    </video>
+    <div className="overlay"></div>
+</div>
+
 
                 <div className="content container" style={{ marginTop: '10px', marginLeft: '5%' }}>
                     <h1 className='firdt' style={{ marginBottom: '20px', fontSize:'40px' }}>

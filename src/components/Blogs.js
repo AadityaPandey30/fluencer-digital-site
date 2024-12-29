@@ -8,7 +8,7 @@ const Blogs = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/blogs");
+        const response = await axios.get("https://admin-fluencer-blogs-b6ewhacwgdeyh8fw.eastasia-01.azurewebsites.net/api/blogs");
         setBlogs(response.data);
       } catch (error) {
         console.error("Error fetching blogs:", error);
@@ -36,13 +36,13 @@ const Blogs = () => {
               key={blog._id}
               className="flex flex-col items-center gap-6 bg-[#131313] p-4 md:p-10 rounded-2xl border-2 border-solid"
             >
-              <img src={`http://localhost:5000${blog.image}`} className=" w-full h-2/3 max-h-[300px] rounded-md" alt="Fluencer Blogs"/>
+              <img src={`https://admin-fluencer-blogs-b6ewhacwgdeyh8fw.eastasia-01.azurewebsites.net/${blog.image}`} className=" w-full h-2/3 max-h-[300px] rounded-md" alt="Fluencer Blogs"/>
               <div className="flex flex-col gap-6 self-stretch grow">
                 <div className="flex flex-col gap-2 self-stretch">
                   <span className="font-bold text-[28px] leading-[34px] text-white">
                     {blog.blog_title}
                   </span>
-                  <span className=" text-[#bebebe]" dangerouslySetInnerHTML={{ __html: blog.blog_content.slice(0,100)+"..." }}>
+                  <span className=" text-[#bebebe]" dangerouslySetInnerHTML={{ __html: blog.blog_content.slice(0,150)+"..." }}>
                   </span>
                 </div>
                 <div className="flex items-center gap-2.5 rounded-lg">
@@ -50,22 +50,8 @@ const Blogs = () => {
                     to={`/blog/${blog._id}`} // Navigate to the blog page with the ID
                     className="font-semibold text-[24px] leading-[28px] text-[#ed1c24]"
                   >
-                    Read Full Blog
+                    Read Full Blog →
                   </Link>
-                  <svg
-                    className="w-6 h-3 text-[#ed1c24]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
                 </div>
               </div>
             </div>
