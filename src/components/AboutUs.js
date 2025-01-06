@@ -1,5 +1,6 @@
 import React from "react";
 import sarthak from "./sarthak.png";
+import yash from "./yash.jpg"
 
 const AboutUs = () => {
   return (
@@ -59,7 +60,7 @@ const AboutUs = () => {
         <div class="md:flex md:flex-row-reverse px-4 items-center gap-16 max-w-7xl">
           <img
             class="w-full md:w-[40%]"
-            src={sarthak}
+            src={yash}
             alt="Fluencer Founder"
           ></img>
           <div class="flex flex-col gap-[5%] grow">
