@@ -9,7 +9,7 @@ const Blog = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const response = await axios.get(`https://admin-fluencer-blogs-b6ewhacwgdeyh8fw.southeastasia-01.azurewebsites.net/api/blogs/${id}`);
+                const response = await axios.get(`http://localhost:5000/api/blogs/${id}`);
                 setBlog(response.data);
             } catch (error) {
                 console.error("Error fetching blog:", error);
@@ -34,7 +34,7 @@ const Blog = () => {
                 </span>
             </div>
 
-            <img src={`https://admin-fluencer-blogs-b6ewhacwgdeyh8fw.southeastasia-01.azurewebsites.net/${blog.image}`} alt="Fluencer Blogs" className="w-full md:h-[80vh] m-auto py-10 rounded-lg" />
+            <img src={`http://localhost:5000${blog.image}`} alt="Fluencer Blogs" className="w-full md:h-[80vh] m-auto py-10 rounded-lg" />
 
             {/* Blog Content */}
             {/* <div className="text-white px-10 py-6">{blog.blog_content}</div> */}
