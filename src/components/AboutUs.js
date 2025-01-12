@@ -1,11 +1,18 @@
 import React from "react";
 import sarthak from "./sarthak.png";
 import yash from "./yash.jpg"
+import { Link } from "react-router-dom";
+import bulb from "./bulb.png"
+import diamond from "./diamond.png"
+import rocket from "./rocket-launch.png"
+import gear from "./mdi_gear.png"
+
+
 
 const AboutUs = () => {
   return (
     <div>
-      <div class="flex flex-col items-center gap-3 self-stretch mt-[55%] md:mt-[14%] px-3 pb-[8%]">
+      <div class="flex flex-col items-center gap-3 self-stretch mt-[55%] md:mt-[8%] px-3 pb-[8%]">
         <span class="font-bold text-[20px] md:text-[24px] leading-[34px] text-center text-[#ed1c24]">
           ABOUT FLUENCER DIGITAL
         </span>
@@ -13,9 +20,9 @@ const AboutUs = () => {
           Your Trusted Partner in Turning Ideas Into Innovation
         </span>
       </div>
-      <div class=" flex flex-col gap-20 px-[4%] md:px-[9%] py-[10%]">
+      <div class="flex flex-col gap-20 px-[4%] md:px-[9%] pb-[10%]">
         <div class=" md:flex justify-center items-center md:gap-[74px] self-stretch">
-          <div class="flex flex-col md:gap-14 self-stretch w-[761px]">
+          <div class="flex flex-col md:gap-6 self-stretch w-[761px]">
             <div class="flex flex-col gap-3 self-stretch">
               <span class="font-bold text-[18px] md:text-[24px] leading-[34px] text-[#ed1c24] mt-[20%] md:mt-0">
                 ABOUT US
@@ -25,11 +32,13 @@ const AboutUs = () => {
               </span>
             </div>
             <div className="">
-              <div class="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[2%] md:px-[4%] py-[1%] md:py-[2%] rounded-lg w-fit my-[2%] md:my-0">
+            <Link to="/ourservices">
+              <div class="bg-[#ed1c24] px-[2%] md:px-[4%] py-[1%] md:py-[2%] rounded-lg w-fit my-[2%] md:my-0 cursor-pointer">
                 <button class="font-semibold text-md md:text-xl text-white">
                   Explore Our Services →
                 </button>
               </div>
+              </Link>
             </div>
           </div>
           <span class="font-normal text-lg md:text-xl leading-[34px] text-white max-w-2xl">
@@ -104,11 +113,11 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div class="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[25px] py-[15px] rounded-lg">
+        {/* <div class="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[25px] py-[15px] rounded-lg cursor-pointer">
           <button class="font-semibold text-xl text-white">
             Learn More About Our Team →
           </button>
-        </div>
+        </div> */}
       </div>
 
       <div class="flex flex-col items-center gap-20 px-[6%] py-[6%] max-w-7xl m-auto">
@@ -131,7 +140,7 @@ const AboutUs = () => {
           <div class="flex flex-col md:flex-row justify-center gap-4 self-stretch">
             <div class="flex flex-col items-center gap-6 grow bg-[#131313] p-4 md:p-10 rounded-2xl border-2 border-solid basis-1/2">
               <div class="flex flex-col items-center gap-6 self-stretch">
-                <div class="w-[72px] h-[72px] bg-[#e7ebfc] p-3 md:p-6 rounded-[100px]"></div>
+                <div class="w-[72px] h-[72px] bg-[#e7ebfc] p-3 md:p-6 rounded-[100px]"><img src={bulb} alt="icon" className="m-[10%]"/></div>
                 <div class="flex flex-col gap-2 self-stretch">
                   <span class="font-bold text-[28px] leading-[34px] text-center text-white">
                     Innovation
@@ -147,11 +156,7 @@ const AboutUs = () => {
             </div>
             <div class="flex flex-col justify-between items-center self-stretch grow bg-[#131313]  p-4 md:p-10 rounded-2xl border-2 border-solid basis-1/2">
               <div class="flex flex-col items-center gap-6 self-stretch">
-                <div class="w-[72px] h-[72px] bg-[#e7ebfc] p-3 md:p-6 rounded-[100px]">
-                  <div class="w-8 h-8">
-                    <svg class="w-[26.666671752929688px] h-[24.0000057220459px] text-[#ff111b]"></svg>
-                  </div>
-                </div>
+              <div class="w-[72px] h-[72px] bg-[#e7ebfc] p-3 md:p-6 rounded-[100px]"><img src={diamond} alt="icon" className="m-[10%]"/></div>
                 <div class="flex flex-col gap-2 self-stretch">
                   <span class="font-bold text-[28px] leading-[34px] text-center text-white">
                     Excellence
@@ -170,7 +175,7 @@ const AboutUs = () => {
           <div class="flex flex-col md:flex-row justify-center gap-4 self-stretch">
             <div class="flex flex-col items-center gap-6 grow bg-[#131313] p-4 md:p-10 rounded-2xl border-2 border-solid basis-1/2">
               <div class="flex flex-col items-center gap-6 self-stretch">
-                <div class="w-[72px] h-[72px] bg-[#e7ebfc] p-3 md:p-6 rounded-[100px]"></div>
+              <div class="w-[72px] h-[72px] bg-[#e7ebfc] p-3 md:p-6 rounded-[100px]"><img src={rocket} alt="icon" className="m-[10%]"/></div>
                 <div class="flex flex-col gap-2 self-stretch">
                   <span class="font-bold text-[28px] leading-[34px] text-center text-white">
                     Adaptability
@@ -186,11 +191,7 @@ const AboutUs = () => {
             </div>
             <div class="flex flex-col justify-between items-center self-stretch grow bg-[#131313]  p-4 md:p-10 rounded-2xl border-2 border-solid basis-1/2">
               <div class="flex flex-col items-center gap-6 self-stretch">
-                <div class="w-[72px] h-[72px] bg-[#e7ebfc] p-3 md:p-6 rounded-[100px]">
-                  <div class="w-8 h-8">
-                    <svg class="w-[26.666671752929688px] h-[24.0000057220459px] text-[#ff111b]"></svg>
-                  </div>
-                </div>
+              <div class="w-[72px] h-[72px] bg-[#e7ebfc] p-3 md:p-6 rounded-[100px]"><img src={gear} alt="icon" className="m-[10%]"/></div>
                 <div class="flex flex-col gap-2 self-stretch">
                   <span class="font-bold text-[28px] leading-[34px] text-center text-white">
                     Collaboration
@@ -206,12 +207,12 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div class="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[25px] py-[15px] rounded-lg">
+        {/* <div class="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[25px] py-[15px] rounded-lg">
           <button class="font-semibold text-xl text-white">
             Discover Our Philosophy →
           </button>
           <svg class="w-5 h-2.5 text-white"></svg>
-        </div>
+        </div> */}
       </div>
 
       <div class="flex flex-col gap-2 px-[2%] py-[5%] max-w-7xl m-auto">
@@ -236,11 +237,13 @@ const AboutUs = () => {
             success, positions us as the go-to tech partner for startups and
             businesses aiming to create world-class products.
           </span>
+          <Link to="/ourWorks">
           <div class="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[25px] py-[15px] rounded-lg">
             <button class="font-semibold text-xl text-white">
-              See How We Work →
+              Sample Works →
             </button>
           </div>
+          </Link>
         </div>
       </div>
 
@@ -258,14 +261,18 @@ const AboutUs = () => {
           </span>
         </div>
         <div class="flex flex-col gap-4">
+        <Link to="/mainContact">
           <div class="flex justify-center items-center gap-2.5">
-            <button class="font-semibold text-xl text-white px-[25px] py-[15px] rounded-lg border border-solid border-white w-full">Contact Us</button>
+          <button class="font-semibold text-xl text-white px-[25px] py-[15px] rounded-lg border border-solid border-white w-full">Contact Us</button>
           </div>
+          </Link>
+          <Link to="/mainContact">
           <div class="flex justify-center items-center gap-2.5">
-            <button class="font-semibold text-xl text-white px-[25px] py-[15px] bg-[#ed1c24] h-fit rounded-lg w-full">
+          <button class="font-semibold text-xl text-white px-[25px] py-[15px] bg-[#ed1c24] h-fit rounded-lg w-full">
               Start Your Journey Today
             </button>
           </div>
+          </Link>
         </div>
       </div>
     </div>
