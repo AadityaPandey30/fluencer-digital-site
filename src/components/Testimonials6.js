@@ -12,7 +12,7 @@ const Testimonials5 = () => {
                 <img className='overlay-imgMain' id="customer-img" src={image} alt="client" />
             </div>
             <div className="Testi card-body" style={{marginTop:'1px'}}>
-                <h5 class="Test-card-title" id="customer-name"><b>Kanik Vijay</b></h5>  {/*{item.name} */}
+                <h5 class="Test-card-title" id="customer-name"><b>Saurabh Chauhan</b></h5>  {/*{item.name} */}
                 <h5>(The Firstmile Global)</h5>  {/*{item.title} */}
                 <p className='TestiPara' id="customer-text">Good experience working with them all the members are supportive in the team, same time all are tech experts, if anyone is looking for website development or collaboration in tech outsourcing can connect with them.</p>  
                 <br/>

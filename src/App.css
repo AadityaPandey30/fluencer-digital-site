@@ -598,6 +598,20 @@ html:not(.no-js) [data-aos^=slide][data-aos^=slide].aos-animate {
 
 .head{
   color: #ED1C24;
+  font-size: x-large;
+  padding: 2% 0px 1% 0px;
+}
+
+.con{
+  font-size: large;
+  padding: 1.2% 0px;
+}
+
+.list{
+  list-style: circle;
+  padding: 1% 0px ;
+  color: #d7d7d7;
+  margin-left: 3%;
 }
 
 .smallNav ul li a{
@@ -2327,7 +2341,7 @@ button:focus:not(:focus-visible) {
   /*Us Section*/
 
   .Us {
-    height: 60vh !important;
+    height: 40vh !important;
     width: 100%;
     margin-top: 0 !important;
     /* margin-top: 80px; */

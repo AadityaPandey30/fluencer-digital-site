@@ -35,11 +35,8 @@ const Blog = () => {
             </div>
 
             <img src={`https://fluencerblogbackend.onrender.com${blog.image}`} alt="Fluencer Blogs" className="w-full md:h-[80vh] m-auto py-10 rounded-lg" />
-
-            {/* Blog Content */}
-            {/* <div className="text-white px-10 py-6">{blog.blog_content}</div> */}
             <div
-                className="text-white"
+                className="text-white r-content"
                 dangerouslySetInnerHTML={{ __html: blog.blog_content }}
             ></div>
 
