@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"; // Import useParams to get the blog ID
+import { Link, useParams } from "react-router-dom"; // Import useParams to get the blog ID
 import axios from "axios";
 import Loader2 from "./Loader2";
 
@@ -81,11 +81,11 @@ const Blog = () => {
                     </span>
                 </div>
                 <div className="flex gap-4">
-                    <div className="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[3%] md:px-[25px] py-[2%] md:py-[15px] rounded-lg my-[4%] md:m-0 cursor-pointer">
+                    <Link to="/mainContact"><div className="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[3%] md:px-[25px] py-[2%] md:py-[15px] rounded-lg my-[4%] md:m-0 cursor-pointer">
                         <span className="font-semibold text-xl md:text-lg text-white">
                             Contact Us Today
                         </span>
-                    </div>
+                    </div></Link>
                 </div>
             </div>
         </div>
