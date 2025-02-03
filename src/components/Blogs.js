@@ -11,7 +11,7 @@ const Blogs = () => {
     const fetchBlogs = async () => {
       try {
         const response = await axios.get(
-          "https://fluencerblogbackend.onrender.com/api/blogs"
+          "https://fluencerblogbackend.azurewebsites.net/api/blogs"
         );
         console.log("Fetched Blogs:", response.data); // Debugging log
         setBlogs(response.data);

@@ -11,7 +11,7 @@ const Blog = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const response = await axios.get(`https://fluencerblogbackend.onrender.com/api/blogs/${id}`);
+                const response = await axios.get(`https://fluencerblogbackend.azurewebsites.net/api/blogs/${id}`);
                 setBlog(response.data);
             } catch (error) {
                 console.error("Error fetching blog:", error);
