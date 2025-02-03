@@ -22,6 +22,7 @@ import kenLogo from './logo/Kn-removebg-preview.png';
 import tprLogo from './logo/TPR.png';
 import fml from './logo/fml.png';
 import keithLogo from './logo/keithLogo.png';
+import { Helmet } from 'react-helmet';
 
 const workItems = [
     {
@@ -115,6 +116,11 @@ const OurWorks = () => {
   }, [])
 
   return (
+    <>
+    <Helmet>
+        <title>Projects Delivered- Fluencer Digital</title>
+        <meta name="description" content="Contact us for " />
+      </Helmet>
     <div className='ourWork container1'>
       <div>
         <h1 className='heading' style={{ color: '#fff', WebkitTextStroke: '0px', textAlign: 'center', zIndex: '-1' }}>Case Studies<span style={{ color: 'orangered', fontSize: '2.8rem' }}>.</span></h1>
@@ -140,11 +146,9 @@ const OurWorks = () => {
             />
         )}
     </div>
-))}
-
-
-      
+))}  
     </div>
+    </>
   )
 }
 

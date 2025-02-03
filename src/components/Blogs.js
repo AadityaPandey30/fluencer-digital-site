@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loader2 from "./Loader2";
+import { Helmet } from "react-helmet";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -27,6 +28,10 @@ const Blogs = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Blogs - Fluencer Digital</title>
+        <meta name="description" content="Contact us for " />
+      </Helmet>
       <div className="flex flex-col items-center gap-3 self-stretch max-w-4xl mx-auto mt-[14%] mb-[8%]">
         <span className="font-bold text-[20px] md:text-[24px] md:leading-[34px] text-center text-[#d6696d]">
           BLOGS

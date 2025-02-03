@@ -6,12 +6,17 @@ import bulb from "./bulb.png"
 import diamond from "./diamond.png"
 import rocket from "./rocket-launch.png"
 import gear from "./mdi_gear.png"
+import Helmet from "react-helmet"
 
 
 
 const AboutUs = () => {
   return (
     <div>
+      <Helmet>
+        <title>About Fluencer Digital</title>
+        <meta name="description" content="Learn more about our company, team, and values. Discover how we strive to deliver excellence in everything we do." />
+      </Helmet>
       <div class="flex flex-col items-center gap-3 self-stretch mt-[55%] md:mt-[8%] px-3 pb-[8%]">
         <span class="font-bold text-[20px] md:text-[24px] leading-[34px] text-center text-[#ed1c24]">
           ABOUT FLUENCER DIGITAL
@@ -113,11 +118,6 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        {/* <div class="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[25px] py-[15px] rounded-lg cursor-pointer">
-          <button class="font-semibold text-xl text-white">
-            Learn More About Our Team →
-          </button>
-        </div> */}
       </div>
 
       <div class="flex flex-col items-center gap-20 px-[6%] py-[6%] max-w-7xl m-auto">
@@ -207,12 +207,6 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        {/* <div class="flex justify-center items-center gap-2.5 bg-[#ed1c24] px-[25px] py-[15px] rounded-lg">
-          <button class="font-semibold text-xl text-white">
-            Discover Our Philosophy →
-          </button>
-          <svg class="w-5 h-2.5 text-white"></svg>
-        </div> */}
       </div>
 
       <div class="flex flex-col gap-2 px-[2%] py-[5%] max-w-7xl m-auto">

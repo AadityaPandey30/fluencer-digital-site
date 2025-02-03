@@ -9,6 +9,7 @@ import ai from './ai.png'
 // import { useInView } from 'react-intersection-observer';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Helmet } from 'react-helmet'
 
 const OurServicesFour = () => {
 
@@ -21,6 +22,10 @@ useEffect(()=>{
 
     return (
         <>
+        <Helmet>
+        <title>AI Training Fluencer Digital</title>
+        <meta name="description" content="Contact us for " />
+      </Helmet>
     {/* Fourth part */}
     <div>
         <div className="Back-img-Service">

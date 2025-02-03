@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom"; // Import useParams to get the blog ID
 import axios from "axios";
 import Loader2 from "./Loader2";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
     const { id } = useParams(); // Extract the ID from the URL
@@ -40,6 +41,11 @@ const Blog = () => {
     }
 
     return (
+        <>
+        <Helmet>
+        <title>Detailed Blog</title>
+        <meta name="description" content={blog.blog_title} />
+      </Helmet>
         <div className="px-[4%] md:px-[12%] py-[8%] m-auto">
             {/* Blog Header */}
             <div className="flex flex-col items-center gap-3 self-stretch">
@@ -89,6 +95,7 @@ const Blog = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

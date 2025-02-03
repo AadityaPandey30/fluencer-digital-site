@@ -9,6 +9,7 @@ import mobile from './mobile1.png'
 // import { useInView } from 'react-intersection-observer';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Helmet } from 'react-helmet'
 
 const OurServicesThree = () => {
 
@@ -21,6 +22,10 @@ useEffect(()=>{
 
     return (
         <>
+        <Helmet>
+        <title>App Development Fluencer Digital</title>
+        <meta name="description" content="Contact us for " />
+      </Helmet>
     {/* Third Part - Mobile App Development */}
     <div>
         <div className="Back-img-Service">

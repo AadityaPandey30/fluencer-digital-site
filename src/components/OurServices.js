@@ -5,6 +5,7 @@ import web2 from './Our Services/Website Development/E-COM.png'
 import web3 from './Our Services/Website Development/FRONT-END.png'
 import web4 from './Our Services/Website Development/PWA.png'
 import web5 from './Our Services/Website Development/SAAS.png'
+import { Helmet } from 'react-helmet'
 // import web6 from './Our Services/Website Development/Website Development.jpg'
 import web6 from './web1.png'
 // import { useInView } from 'react-intersection-observer';
@@ -20,6 +21,10 @@ const OurServices = () => {
 
     return (
         <>
+        <Helmet>
+        <title>Web Development Fluencer Digital</title>
+        <meta name="description" content="" />
+      </Helmet>
                  <section className="Back-img-Service">
         <div className='img-back'>
           <div style={{margin:'auto', width:'fit-content'}}>
