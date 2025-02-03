@@ -15,7 +15,7 @@ const AboutUs = () => {
     <div>
       <Helmet>
         <title>About Fluencer Digital</title>
-        <meta name="description" content="Learn more about our company, team, and values. Discover how we strive to deliver excellence in everything we do." />
+        <meta name="description" content="Discover how Fluencer Digital empowers startups and businesses with cutting-edge technology solutions. Meet our founders - Yash Kandoi and Sarthak." />
       </Helmet>
       <div class="flex flex-col items-center gap-3 self-stretch mt-[55%] md:mt-[8%] px-3 pb-[8%]">
         <span class="font-bold text-[20px] md:text-[24px] leading-[34px] text-center text-[#ed1c24]">

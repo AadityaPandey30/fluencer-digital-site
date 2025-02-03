@@ -30,7 +30,7 @@ const Blogs = () => {
     <div>
       <Helmet>
         <title>Blogs - Fluencer Digital</title>
-        <meta name="description" content="Contact us for " />
+        <meta name="description" content="Stay updated with Fluencer Digital&apos;s blogs on technology, MVP development, and startup success. Get expert insights and innovative ideas to fuel your growth." />
       </Helmet>
       <div className="flex flex-col items-center gap-3 self-stretch max-w-4xl mx-auto mt-[14%] mb-[8%]">
         <span className="font-bold text-[20px] md:text-[24px] md:leading-[34px] text-center text-[#d6696d]">

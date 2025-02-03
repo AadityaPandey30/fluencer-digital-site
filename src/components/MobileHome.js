@@ -6,10 +6,15 @@ import Us from './Us';
 import Testimonials from './Testimonials';
 import MainContact from './MainContact';
 import Works from './Works';
+import { Helmet } from 'react-helmet';
 
 const MobileHome = () => {
   return (
     <div>
+        <Helmet>
+        <title>Fluencer Digital Home</title>
+        <meta name="description" content="Read Fluencer Digital's Privacy Policy to understand how we collect, use, and protect your personal information. Stay informed about your data rights" />
+      </Helmet>
       <div className="hero" id="home">
       <div className="contain h-[80vh] w-auto ">
     <video

@@ -119,7 +119,7 @@ const OurWorks = () => {
     <>
     <Helmet>
         <title>Projects Delivered- Fluencer Digital</title>
-        <meta name="description" content="Contact us for " />
+        <meta name="description" content="Discover how Fluencer Digital delivers cutting-edge tech solutions. Browse our case studies on web development, AI, and software projects driving innovation" />
       </Helmet>
     <div className='ourWork container1'>
       <div>

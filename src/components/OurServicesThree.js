@@ -24,7 +24,7 @@ useEffect(()=>{
         <>
         <Helmet>
         <title>App Development Fluencer Digital</title>
-        <meta name="description" content="Contact us for " />
+        <meta name="description" content="Build high-performance mobile apps with Fluencer Digital. We offer Android, iOS, and cross-platform development, UI/UX design, backend integration, and QA testing" />
       </Helmet>
     {/* Third Part - Mobile App Development */}
     <div>

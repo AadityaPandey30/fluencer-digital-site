@@ -22,8 +22,8 @@ const OurServices = () => {
     return (
         <>
         <Helmet>
-        <title>Web Development Fluencer Digital</title>
-        <meta name="description" content="" />
+        <title>Web Development- Fluencer Digital</title>
+        <meta name="description" content="Fluencer Digital offers expert web development services, including frontend, backend, SaaS, PWA, eCommerce, and custom software solutions. Build with us today!" />
       </Helmet>
                  <section className="Back-img-Service">
         <div className='img-back'>

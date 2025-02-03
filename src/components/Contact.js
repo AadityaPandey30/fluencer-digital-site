@@ -1,84 +1,159 @@
-import React, { useEffect } from 'react'
-import image from './Contact Us.jpg'
-// import { useInView } from 'react-intersection-observer';
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-// import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import image1 from "./Contact Us.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
 
-    // for animation
-    //   const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    //AOS Animation
-    useEffect(() => {
-        Aos.init({ duration: 500 });
-    }, [])
+    const serviceId = "service_hp4bpsh"; // Replace with your service ID
+    const publicKey = "YSDN2PdjTNg6qu6KA"; // Replace with your public key
 
-    return (
-        <div className='cont' style={{ marginTop: '120px' }}>
-            <div className="contact">
-                <div className="firstPart"> {/*  data-aos="zoom-in"  {`${'hid4 firstPart'} ${myElementIsVisible? 'show': 'hid4'}`} ref={myRef}*/}
-                    <img style={{ width: '100%', marginRight: '30px' }} src={image} alt="" />
-                </div>
-                <div className="SecondPart" style={{ marginLeft: '25px' }}> {/* data-aos="slide-up"  {`${'hid2 SecondPart'} ${myElementIsVisible? 'show': 'hid2'}`} ref={myRef}  */}
-                    <div>
-                        <h3 className='h3title' style={{ color: 'white', fontSize: '2.30rem', fontWeight: '400' }}>Schedule a free consultation<span style={{ color: 'orangered', fontSize: '2.8rem' }}>.</span></h3>
-                    </div>
-                    <form className="row g-3" action='https://formspree.io/f/mjvqpbgg' method='POST'>
-                        <div class="form-floating mb-3 col-12">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name" name='Name' />
-                            <label for="floatingInput">Your Name</label>
-                        </div>
-                        <div class="form-floating col-md-6">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name='Email' required/>
-                            <label for="floatingInput">Your Email Id</label>
-                        </div>
-                        <div class="form-floating col-md-6">
-                            <input type="number" class="form-control" id="floatingInput" placeholder="number" name='Number' required/>
-                            <label for="floatingInput">Mobile No.</label>
-                        </div>
-                        <div class="form-floating col-12">
-                            <input type="text" class="form-control" id="floatingPassword" placeholder="text" name="Message"/>
-                            <label for="floatingPassword">Tell US A Little About Your Project...</label>
-                        </div>
-                        <div className="col-12">
-                            <label htmlFor="inputAddress" className="form-label">How Can We Help?</label>
-                            <div className="form-check">
-                                <div className='check'>
-                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                    <label className="form-check-label" htmlFor="gridCheck">
-                                        UI/UX
-                                    </label>
-                                </div>
-                                <div className='check'>
-                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                    <label className="form-check-label" htmlFor="gridCheck">
-                                        Website Development
-                                    </label>
-                                </div>
-                                <div className='check'>
-                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                    <label className="form-check-label" htmlFor="gridCheck">
-                                        Mobile App Development
-                                    </label>
-                                </div>
-                                <div className='check'>
-                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                    <label className="form-check-label" htmlFor="gridCheck">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12">
-                          <input className='button' type="submit"  value="Submit" style={{background:'transparent'}}/>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    // Send email to the company
+    emailjs
+      .sendForm(serviceId, "template_5u0ou8m", e.target, publicKey) // Replace with your company template ID
+      .then(
+        (result) => {
+          console.log("Company email sent:", result.text);
+        },
+        (error) => {
+          console.log("Error sending company email:", error.text);
+        }
+      );
+
+    // Send auto-reply to the client
+    emailjs
+      .sendForm(serviceId, "template_b07mxrg", e.target, publicKey) // Replace with your client template ID
+      .then(
+        (result) => {
+          console.log("Client auto-reply sent:", result.text);
+          alert(
+            "We have received your message. Our team will contact you shortly!"
+          );
+        },
+        (error) => {
+          console.log("Error sending auto-reply email:", error.text);
+          alert("Failed to send the email. Please try again.");
+        }
+      );
+
+    e.target.reset();
+  };
+
+  return (
+    <div>
+      <div className="mainContact cont">
+        <div>
+          <h2
+            className="contact-heading"
+            style={{
+              color: "#fff",
+              WebkitTextStroke: "0px",
+              textAlign: "center",
+            }}
+          >
+            Have a Question? Let's Chat
+            <span style={{ color: "orangered", fontSize: "2.8rem" }}>.</span>
+          </h2>
+          <p style={{ color: "#fff", textAlign: "center", marginBottom: "4%" }}>
+            Ready for digital transformation? Partner with Fluencer Digital
+            today!
+          </p>
         </div>
-    )
-}
+        <div className="contact">
+          <div className="firstPart" data-aos="slide-left">
+            <img
+              style={{ width: "100%", marginRight: "30px" }}
+              src={image1}
+              alt="Contact Us"
+            />
+          </div>
+          <div
+            className="SecondPart"
+            data-aos="slide-up"
+            style={{ marginLeft: "25px" }}
+          >
+            <div>
+              <h3
+                className="h3title"
+                style={{
+                  color: "white",
+                  fontSize: "2.30rem",
+                  fontWeight: "400",
+                }}
+              >
+                Contact Team Fluencer Digital
+                <span style={{ color: "orangered", fontSize: "2.8rem" }}>
+                  .
+                </span>
+              </h3>
+            </div>
+            <form className="row g-3" onSubmit={sendEmail}>
+              <div className="form-floating mb-3 col-12">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="floatingInput"
+                  placeholder="Your Name"
+                  name="from_name"
+                  required
+                />
+                <label htmlFor="floatingInput">Your Name</label>
+              </div>
+              <div className="form-floating col-md-6">
+                <input
+                  type="email"
+                  className="form-control"
+                  id="floatingEmail"
+                  placeholder="name@example.com"
+                  name="email"
+                  required
+                />
+                <label htmlFor="floatingEmail">Your Email Id</label>
+              </div>
+              <div className="form-floating col-md-6">
+                <input
+                  type="number"
+                  className="form-control"
+                  id="floatingNumber"
+                  placeholder="Mobile Number"
+                  name="number"
+                  required
+                />
+                <label htmlFor="floatingNumber">Mobile No.</label>
+              </div>
+              <div className="form-floating col-12">
+                <textarea
+                  className="form-control"
+                  id="floatingMessage"
+                  placeholder="Tell us about your project..."
+                  name="message"
+                  rows="3"
+                  required
+                ></textarea>
+                <label htmlFor="floatingMessage">Project Details</label>
+              </div>
+              <div className="col-12">
+                <input
+                  className="button"
+                  type="submit"
+                  value="Submit"
+                  style={{ background: "transparent" }}
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

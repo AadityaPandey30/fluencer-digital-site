@@ -15,9 +15,7 @@ const Testimonials4 = () => {
                 <h5 class="Test-card-title" id="customer-name"><b>Shrey Singh</b></h5>  {/*{item.name} */}
                 <h5>(Senior Associate- Newton School)</h5>  {/*{item.title} */}
                 <p className='TestiPara' id="customer-text">Outstanding work! Fluencer Digital exceeded our expectations with their Website Development.</p>  
-                <br/>
-                {/* <p class="" id="customer-text">Highly recommend Fluencer Digital for their expertise and professionalism. Our project was a success thanks to their dedication.</p> */}
-                <p class=""><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            
             </div>
         </div>
     )

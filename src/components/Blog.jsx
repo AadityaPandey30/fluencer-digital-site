@@ -43,7 +43,7 @@ const Blog = () => {
     return (
         <>
         <Helmet>
-        <title>Detailed Blog</title>
+        <title>Detailed Blog - Fluencer Digital</title>
         <meta name="description" content={blog.blog_title} />
       </Helmet>
         <div className="px-[4%] md:px-[12%] py-[8%] m-auto">

@@ -24,7 +24,7 @@ useEffect(()=>{
         <>
         <Helmet>
         <title>AI Training Fluencer Digital</title>
-        <meta name="description" content="Contact us for " />
+        <meta name="description" content="Transform your business with Fluencer Digital’s AI solutions. From machine learning and chatbots to predictive analytics, we help you harness AI for growth." />
       </Helmet>
     {/* Fourth part */}
     <div>

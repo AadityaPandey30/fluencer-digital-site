@@ -4,9 +4,10 @@ import { TypeAnimation } from 'react-type-animation';
 import Services from './Services';
 import Us from './Us';
 import Testimonials from './Testimonials';
-import MainContact from './MainContact';
+import Contact from './Contact';
 import Works from './Works';
 import MobileHome from './MobileHome';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -34,6 +35,10 @@ const Home = () => {
     // Render original Home component for other devices
     return (
         <>
+        <Helmet>
+        <title>Fluencer Digital Home</title>
+        <meta name="description" content="Transform your digital presence with Fluencer Digital. We specialize in web development, software solutions, and strategic design to drive business success" />
+      </Helmet>
             <div className="hero" id="home" style={{ height: '128vh' }}>
                 <div className="contain" style={{ height: '128vh' }}>
                     <video className='back-video' autoPlay loop muted playsInline preload="metadata">
@@ -69,7 +74,7 @@ const Home = () => {
             <Works />
             <Us />
             <Testimonials />
-            <MainContact />
+            <Contact />
         </>
     );
 };

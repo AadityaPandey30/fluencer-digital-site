@@ -23,7 +23,7 @@ const OurServicesPart = () => {
     <>
       <Helmet>
         <title>Software Development Fluencer Digital</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Fluencer Digital offers custom software development, API integration, legacy modernization, and QA testing. Build innovative, scalable solutions with us!" />
       </Helmet>
       {/* Second part */}
       <div>

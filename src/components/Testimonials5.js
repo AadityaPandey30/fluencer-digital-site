@@ -15,9 +15,7 @@ const Testimonials5 = () => {
                 <h5 class="Test-card-title" id="customer-name"><b>Samiksha Satpute</b></h5>  {/*{item.name} */}
                 <h5>(The Planet Reserve)</h5>  {/*{item.title} */}
                 <p className='TestiPara' id="customer-text">We couldnot be happier with our decision to collaborate with them.
-                For anyone looking for a talented and hardworking team, highly recommend them..</p>  
-                <br/>
-                
+                For anyone looking for a talented and hardworking team, highly recommend them..</p>                  
             </div>
         </div>
     )

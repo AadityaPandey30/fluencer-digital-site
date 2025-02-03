@@ -51,7 +51,7 @@ const Contact = () => {
     <div>
       <Helmet>
         <title>Contact Fluencer Digital</title>
-        <meta name="description" content="Contact us for " />
+        <meta name="description" content="Have questions or need assistance? Contact Fluencer Digital for innovative tech solutions, expert guidance, and seamless digital transformation." />
       </Helmet>
       <div className="mainContact cont">
         <div>

@@ -241,7 +241,7 @@ nav {
 .card {
   border: none !important;
   width: 50%;
-  height: 50vh;
+  /* height: 50vh; */
   cursor: pointer;
 }
 
@@ -1412,7 +1412,7 @@ button:focus:not(:focus-visible) {
   .card {
     border: none !important;
     width: 35%;
-    height: 35vh;
+    /* height: 35vh; */
     cursor: pointer;
     position: relative;
   }
@@ -1715,7 +1715,7 @@ button:focus:not(:focus-visible) {
   .card {
     border: none !important;
     width: 30%;
-    height: 30vh;
+    /* height: 30vh; */
     cursor: pointer;
     position: relative;
     margin-top: 25px;
@@ -1985,7 +1985,7 @@ button:focus:not(:focus-visible) {
   .card {
     border: none !important;
     width: 25%;
-    height: 25vh;
+    /* height: 25vh; */
     cursor: pointer;
     position: relative;
     margin-top: 30px;
@@ -2269,7 +2269,7 @@ button:focus:not(:focus-visible) {
   .card {
     border: none !important;
     width: 20%;
-    height: 20vh;
+    /* height: 15vh; */
     cursor: pointer;
     position: relative;
     margin-top: 30px;
@@ -2638,10 +2638,10 @@ button:focus:not(:focus-visible) {
   .card {
     border: none !important;
     flex:none;
-    width: 40%;
+    width: 47%;
     cursor: pointer;
     /* position: relative; */
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 
   .card-div {
@@ -3153,6 +3153,7 @@ button:focus:not(:focus-visible) {
     border: none !important;
     width: 63vw !important;
     height: 56vh !important;
+    max-height: fit-content ;
     cursor: pointer;
     position: relative;
     display: flex;

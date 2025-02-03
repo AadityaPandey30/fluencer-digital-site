@@ -1,9 +1,14 @@
 import React from 'react'
 import img from "./free-privacy.jpg"
+import { Helmet } from 'react-helmet'
 
 function Privacy() {
     return (
         <>
+        <Helmet>
+        <title>Privacy Policy- Fluencer Digital</title>
+        <meta name="description" content="Read Fluencer Digital's Privacy Policy to understand how we collect, use, and protect your personal information. Stay informed about your data rights" />
+      </Helmet>
             <section className='privacyMain'>
                 <div className='privacyDiv'>
                     <div className="privacyImage">
