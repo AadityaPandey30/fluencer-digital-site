@@ -39,9 +39,9 @@ const Home = () => {
         <title>Fluencer Digital Home</title>
         <meta name="description" content="Transform your digital presence with Fluencer Digital. We specialize in web development, software solutions, and strategic design to drive business success" />
       </Helmet>
-            <div className="hero" id="home" style={{ height: '128vh' }}>
-                <div className="contain" style={{ height: '128vh' }}>
-                    <video className='back-video' autoPlay loop muted playsInline preload="metadata">
+            <div className="hero" id="home" style={{ height: 'fit-content' }}>
+                <div className="contain " style={{ height: '100vh' }}>
+                    <video className='back-video h-full w-full object-fill' autoPlay loop muted playsInline preload="metadata">
                         <source src="/BGVideoMobile.mp4" type="video/mp4" />
                     </video>
                     <div className="overlay"></div>

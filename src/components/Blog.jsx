@@ -26,7 +26,7 @@ const Blog = () => {
 
     if (loading) {
         return (
-            <div className="text-white text-center text-xl mt-10 relative pt-24">
+            <div className="text-white text-center text-xl mt-10 relative pt-24 left-[38%] md:left-[45%]">
                 <Loader2 />
             </div>
         );
@@ -34,7 +34,7 @@ const Blog = () => {
 
     if (!blog) {
         return (
-            <div className="text-white text-center text-xl mt-10">
+            <div className="text-white text-center text-xl mt-10 relative pt-24 left-[38%] md:left-[45%]">
                 <Loader2 />
             </div>
         );

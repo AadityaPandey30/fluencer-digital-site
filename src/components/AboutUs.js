@@ -75,7 +75,7 @@ const AboutUs = () => {
           <img
             class="w-full md:w-[40%]"
             src={yash}
-            alt="Fluencer Founder"
+            alt="Fluencer Founder Yash Kandoi"
           ></img>
           <div class="flex flex-col gap-[5%] grow">
             <div class="flex flex-col gap-1 md:gap-6 self-stretch">
@@ -99,7 +99,7 @@ const AboutUs = () => {
           <img
             class="w-full md:w-[40%]"
             src={sarthak}
-            alt="Fluencer Co-Founder"
+            alt="Fluencer Co-Founder Sarthak"
           ></img>
           <div class="flex flex-col gap-[5%] grow">
             <div class="flex flex-col gap-1 md:gap-6 self-stretch">

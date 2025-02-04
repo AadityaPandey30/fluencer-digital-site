@@ -44,7 +44,7 @@ const Blogs = () => {
       <div className="blogs grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto px-4">
         {loading ? (
           // Show loader while data is being fetched
-          <div className="text-white text-center text-xl mt-10 relative left-[50%]">
+          <div className="text-white text-center text-xl mt-10 relative left-[37%] md:left-[91%] lg:left-[93%]">
             <Loader2 />
           </div>
         ) : blogs.length > 0 ? (
@@ -90,7 +90,7 @@ const Blogs = () => {
           ))
         ) : (
           // Show a message if no blogs are available
-          <div className="text-white text-center text-xl mt-10">
+          <div className="text-white text-center text-xl w-full">
             <Loader2 />
           </div>
         )}

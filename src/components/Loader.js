@@ -5,8 +5,10 @@ const Loader = () => {
   return (
     <StyledWrapper>
       <div className="loader">
-        <span>fluencer</span>
-        <span>fluencer</span>
+        <span>Fluencer</span>
+        <span>Fluencer</span>
+        <span>Digital</span>
+        <span>Digital</span>
       </div>
     </StyledWrapper>
   );
@@ -24,18 +26,35 @@ const StyledWrapper = styled.div`
     color: #fff;
     transform: translate(-50%, -50%);
     font-size: 52px;
-    font-family: ;
+    font-family: "Poppins", serif;
     letter-spacing: 5px;
   }
 
   .loader span:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 1px red;
+    -webkit-text-stroke: 1px #ec1b23;
   }
 
   .loader span:nth-child(2) {
-    color: red;
-    -webkit-text-stroke: 1px red;
+    color: #ec1b23;
+    -webkit-text-stroke: 1px #ec1b23;
+    animation: uiverse723 3s ease-in-out infinite;
+  }
+
+    .loader span:nth-child(3) {
+    position: relative;
+    top: 20px;
+    right: 90px;
+    color: transparent;
+    -webkit-text-stroke: 1px #004aad;
+  }
+
+  .loader span:nth-child(4) {
+    position: relative;
+    top: 20px;
+    right: 290px;
+    color: #004aad;
+    -webkit-text-stroke: 1px #004aad;
     animation: uiverse723 3s ease-in-out infinite;
   }
 
