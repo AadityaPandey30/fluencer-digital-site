@@ -7,7 +7,7 @@ import diamond from "./diamond.png"
 import rocket from "./rocket-launch.png"
 import gear from "./mdi_gear.png"
 import Helmet from "react-helmet"
-
+import { FaLinkedin } from "react-icons/fa6";
 
 
 const AboutUs = () => {
@@ -80,8 +80,8 @@ const AboutUs = () => {
           <div class="flex flex-col gap-[5%] grow">
             <div class="flex flex-col gap-1 md:gap-6 self-stretch">
               <div class="flex flex-col gap-1">
-                <span class="font-bold text-[28px] md:text-[42px] leading-[52px] text-[#191919] mt-2 md:my-0">
-                  Yash Kandoi
+                <span class="flex font-bold text-[28px] md:text-[42px] leading-[52px] text-[#191919] mt-2 md:my-0">
+                  Yash Kandoi <Link to="https://www.linkedin.com/in/yash-kandoi-85b612184/"><FaLinkedin className="m-1 pl-2" /></Link>
                 </span>
               </div>
               <span class="font-normal text-[16px] md:text-[32px] text-[#1e1e1e] max-w-4xl">
@@ -104,8 +104,8 @@ const AboutUs = () => {
           <div class="flex flex-col gap-[5%] grow">
             <div class="flex flex-col gap-1 md:gap-6 self-stretch">
               <div class="flex flex-col gap-1">
-                <span class="font-bold text-[28px] md:text-[42px] leading-[52px] text-[#191919] mt-2 md:my-0">
-                  Sarthak Behera
+                <span class="flex font-bold text-[28px] md:text-[42px] leading-[52px] text-[#191919] mt-2 md:my-0">
+                  Sarthak Behera <Link to="https://www.linkedin.com/in/sarthakbehera/"><FaLinkedin className="m-1 pl-2" /></Link>
                 </span>
               </div>
               <span class="font-normal text-[16px] md:text-[32px] text-[#1e1e1e] max-w-4xl">

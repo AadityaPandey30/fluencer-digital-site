@@ -3,7 +3,6 @@ import image1 from "./Contact Us.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
-import { Helmet } from "react-helmet";
 
 const Contact = () => {
   useEffect(() => {
